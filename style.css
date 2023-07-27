@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', sans-serif;;
+}
+
+
+body{
+    background: url(./img/note_@.png)no-repeat center;
+    background-size: cover;
+
+}
+
+.container{
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
+
+.input-area{
+    margin-bottom: 24px;
+    
+}
+
+#task-input{
+    border: 0px;
+    border-bottom: 2px solid #aaa8a8;
+    width: 45%;
+    padding: 2px;
+}
+
+#task-input:focus{
+    outline: none;
+}
+
+
+#add-btn{
+    /* border: 2px solid #f0c3cb;
+     */
+     border: none;
+    padding: 0 4px;
+    outline: none;
+    background-color: inherit ;
+    cursor: pointer;
+}
+
+.task-area{
+    border: 1px solid lightgrey;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+
+}
+
+.task-tabs div{
+    padding: 1em;
+}
+
+#under-line{
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 52px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+}
+
+.task.chk-done{
+    background-color: bisque;
+}
+
+.task-done{
+    text-decoration: line-through;
+
+}
+
+.btn{
+    background-color: inherit;
+    border: none;
+}
+
+
+.task-tabs div{
+    cursor: pointer;
+}
+
+.click button{
+    border: 0;
+    padding: 0 4px;
+    outline: none;
+    background-color: inherit ;
+    cursor: pointer;
+}
+
+.click{
+    width: 10%;
+    display: flex;
+}
+
+.click button{
+    width: 50%;
+}
